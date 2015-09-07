@@ -1,0 +1,27 @@
+{
+  "name": "polyreddit",
+  "version": "0.0.0",
+  "description": "Polymer material reddit client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordan-simonovski/polyreddit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordan-simonovski/polyreddit/issues"
+  },
+  "homepage": "https://github.com/jordan-simonovski/polyreddit",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "good": "^6.3.0",
+    "good-console": "^5.0.3",
+    "handlebars": "^4.0.2",
+    "hapi": "^9.3.0",
+    "vision": "^3.0.0"
+  }
+}

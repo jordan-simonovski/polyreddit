@@ -1,0 +1,22 @@
+{
+  "name": "polyreddit",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jordan-simonovski/polyreddit",
+  "authors": [
+    "Jordan.Simonovski@gmail.com"
+  ],
+  "description": "Material Polymer reddit client",
+  "main": "server.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.0.0"
+  }
+}
