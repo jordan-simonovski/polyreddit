@@ -22,6 +22,9 @@
     "good-console": "^5.0.3",
     "handlebars": "^4.0.2",
     "hapi": "^9.3.0",
+    "raw.js": "^0.4.0",
+    "reddit-stream": "^1.2.0",
+    "redwrap": "0.0.4",
     "vision": "^3.0.0"
   }
 }

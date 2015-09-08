@@ -1,5 +1,6 @@
 var Hapi = require('hapi');
 var Good = require('good');
+var reddit = require('redwrap');
 
 var server = new Hapi.Server();
 server.connection({port: 3000});
@@ -14,9 +15,29 @@ server.route({
 
 server.route({
 	method: 'GET',
-	path: '/{name}',
+	path: '/frontpage',
+	handler: function(request, reply) {
+		reddit.list('hot', function(err, data, res) {
+			frontpageReply(data);
+		});
+
+		function frontpageReply(data) {
+			reply(data);
+		}
+	}
+});
+
+server.route({
+	method: 'GET',
+	path: '/r/{subreddit}',
 	handler: function (request, reply) {
-		reply('Hello' + encodeURIComponent(request.params.name) + '!');
+		reddit.r(encodeURIComponent(request.params.subreddit).toString(), function(err, data, res) {
+			subredditReply(data);
+		});
+
+		function subredditReply(data) {
+			reply(data);
+		}
 	}
 });
 
